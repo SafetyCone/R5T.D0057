@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Amazon;
 
 
-namespace R5T.D0057.Default
+namespace R5T.D0057
 {
     public class ConstructorBasedRegionEndpointProvider : IRegionEndpointProvider
     {

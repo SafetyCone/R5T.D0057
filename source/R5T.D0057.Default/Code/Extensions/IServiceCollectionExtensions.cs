@@ -8,7 +8,7 @@ using Amazon.Runtime;
 using R5T.Dacia;
 
 
-namespace R5T.D0057.Default
+namespace R5T.D0057
 {
     public static class IServiceCollectionExtensions
     {

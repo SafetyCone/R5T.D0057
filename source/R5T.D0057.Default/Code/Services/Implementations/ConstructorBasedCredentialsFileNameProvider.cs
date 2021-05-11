@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 
 
-namespace R5T.D0057.Default
+namespace R5T.D0057
 {
     public class ConstructorBasedCredentialsFileNameProvider : ICredentialsFileNameProvider
     {

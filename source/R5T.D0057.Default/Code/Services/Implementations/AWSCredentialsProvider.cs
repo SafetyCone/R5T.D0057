@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using Amazon.Runtime;
 
 
-namespace R5T.D0057.Default
+namespace R5T.D0057
 {
     public class AWSCredentialsProvider : IAWSCredentialsProvider
     {
