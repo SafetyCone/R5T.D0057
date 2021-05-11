@@ -1,0 +1,4 @@
+R5T.D0057.Base - Base service definitions library for AWSSDK related foundation services.
+
+Goals
+

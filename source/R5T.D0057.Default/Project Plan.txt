@@ -1,0 +1,4 @@
+R5T.D0057.Default - Default service implementations library for AWSSDK related foundation services.
+
+Goals
+

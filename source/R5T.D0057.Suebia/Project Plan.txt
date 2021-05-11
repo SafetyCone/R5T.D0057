@@ -1,0 +1,4 @@
+R5T.D0057.Suebia - Suebia (secrets directory)-based service implementations library for AWSSDK related foundation services.
+
+Goals
+
