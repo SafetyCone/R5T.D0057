@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Threading.Tasks;
 
+using R5T.T0064;
+
 
 namespace R5T.D0057
 {
-    public class ConstructorBasedCredentialsFileNameProvider : ICredentialsFileNameProvider
+    [ServiceImplementationMarker]
+    public class ConstructorBasedCredentialsFileNameProvider : ICredentialsFileNameProvider, IServiceImplementation
     {
         private string CredentialsFileName { get; }
 
 
-        public ConstructorBasedCredentialsFileNameProvider(string credentialsFileName)
+        public ConstructorBasedCredentialsFileNameProvider(
+            [NotServiceComponent] string credentialsFileName)
         {
             this.CredentialsFileName = credentialsFileName;
         }

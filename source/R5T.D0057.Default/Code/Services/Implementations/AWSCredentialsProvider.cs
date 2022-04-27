@@ -5,10 +5,13 @@ using Newtonsoft.Json;
 
 using Amazon.Runtime;
 
+using R5T.T0064;
+
 
 namespace R5T.D0057
 {
-    public class AWSCredentialsProvider : IAWSCredentialsProvider
+    [ServiceImplementationMarker]
+    public class AWSCredentialsProvider : IAWSCredentialsProvider, IServiceImplementation
     {
         public const string AccessKeyIDKeyName = "AccessKeyID";
         public const string SecretAccessKeyKeyName = "SecretAccessKey";

@@ -3,15 +3,19 @@ using System.Threading.Tasks;
 
 using Amazon;
 
+using R5T.T0064;
+
 
 namespace R5T.D0057
 {
-    public class ConstructorBasedRegionEndpointProvider : IRegionEndpointProvider
+    [ServiceImplementationMarker]
+    public class ConstructorBasedRegionEndpointProvider : IRegionEndpointProvider, IServiceImplementation
     {
         private RegionEndpoint RegionEndpoint { get; }
 
 
-        public ConstructorBasedRegionEndpointProvider(RegionEndpoint regionEndpoint)
+        public ConstructorBasedRegionEndpointProvider(
+            [NotServiceComponent] RegionEndpoint regionEndpoint)
         {
             this.RegionEndpoint = regionEndpoint;
         }
