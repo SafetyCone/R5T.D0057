@@ -23,7 +23,7 @@ namespace R5T.D0057
         }
 
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedAwsRegionEndpointProvider"/> implementation of <see cref="IAwsRegionEndpointProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedRegionEndpointProvider"/> implementation of <see cref="IRegionEndpointProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IRegionEndpointProvider> AddConstructorBasedRegionEndpointProviderAction(this IServiceCollection services, RegionEndpoint regionEndpoint)
         {
@@ -65,7 +65,7 @@ namespace R5T.D0057
         }
 
         /// <summary>
-        /// Adds the <see cref="OurAwsCredentialProvider"/> implementation of <see cref="IOurAwsCredentialProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="AWSCredentialsProvider"/> implementation of <see cref="IAWSCredentialsProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IAWSCredentialsProvider> AddAWSCredentialsProviderAction(this IServiceCollection services,
             IServiceAction<ICredentialsFilePathProvider> awsCredentialFilePathProviderAction)

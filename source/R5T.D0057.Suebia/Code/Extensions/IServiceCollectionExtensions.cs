@@ -27,7 +27,7 @@ namespace R5T.D0057.Suebia
         }
 
         /// <summary>
-        /// Adds the <see cref="AwsCredentialFilePathProvider"/> implementation of <see cref="IAwsCredentialFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="CredentialsFilePathProvider"/> implementation of <see cref="ICredentialsFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<ICredentialsFilePathProvider> AddCredentialsFilePathProviderAction(this IServiceCollection services,
             IServiceAction<ICredentialsFileNameProvider> credentialsFileNameProviderAction,
